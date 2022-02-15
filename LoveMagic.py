@@ -1,4 +1,4 @@
-#by @Prosta_Umid
+
 
 import random
 from .. import loader
@@ -6,7 +6,7 @@ from asyncio import sleep
 class AMod(loader.Module):
 	strings = {"name": "LoveMagic"}	
 	async def watcher(self, message):
-		if message.text != "❤️ magic":
+		if message.text != ".magic":
 			return
 		if message.sender_id == (await message.client.get_me()).id:
 			arr = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "💖"]
@@ -32,7 +32,8 @@ class AMod(loader.Module):
 			for i in range(8):
 				await message.edit((arr[0]*(8-i)+"\n")*(8-i))
 				await sleep(0.4)
-			for i in ["I", "I ❤️", "I ❤️ U", "I ❤️ U!"]:
-				await message.edit(f"<b>{i}</b>")
+			#for i in ["I", "I ❤️", "I ❤️ U", "I ❤️ U!"]:
+				#await message.edit(f"<b>{i}</b>")
+				await message.edit(f"<b>That's it😁</b>")
 				await sleep(0.5)
 				
