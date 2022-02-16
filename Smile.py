@@ -1,4 +1,4 @@
-#by Prosta_Umid for #USERBOT_uz
+#by @JahongirGaniyev
 from .. import loader
 from asyncio import sleep
 @loader.tds
